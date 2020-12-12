@@ -6,9 +6,9 @@ api = Api(app)
 
 class Homepage(Resource):
     def get(self):
-        return {'home' : 'page'}
+        return {'home' : 'pagedockwer'}
 
 api.add_resource(Homepage, '/')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', debug=True)
